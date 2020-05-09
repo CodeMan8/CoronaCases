@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_CoronaWorldCompare_CoronaWorldCompareUITests : NSObject
+@end
+@implementation PodsDummy_Pods_CoronaWorldCompare_CoronaWorldCompareUITests
+@end

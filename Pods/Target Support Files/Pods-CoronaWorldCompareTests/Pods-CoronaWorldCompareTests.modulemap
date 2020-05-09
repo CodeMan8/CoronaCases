@@ -1,0 +1,6 @@
+framework module Pods_CoronaWorldCompareTests {
+  umbrella header "Pods-CoronaWorldCompareTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

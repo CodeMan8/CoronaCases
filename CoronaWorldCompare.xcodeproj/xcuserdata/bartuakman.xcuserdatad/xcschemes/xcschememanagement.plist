@@ -7,7 +7,25 @@
 		<key>CoronaWorldCompare.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CE796FF0244BC43D00EE4830</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE797009244BC44000EE4830</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE797014244BC44000EE4830</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
