@@ -1,2 +1,24 @@
+ In this app, We 've been provided COVID-19 data day by day according to  the worldometers.info page.
+ Our purpose of that is help the users to compare countries with their daily case reports
+ which contains at the following informations:
+ case,death,test numbers
+ 
+ Features:
+ 
+ - Total cases and deaths also provided by worlwide main screen.
+ - Users be able to  type country name on the top search bar and with click compare button they can see which country has much      less death number of corana virus to the others.
+ 
+//
 
-![Alt text](/relative/path/to/img.jpg?raw=true "https://raw.githubusercontent.com/CodeMan8/CoronaCases/master/Simulator%20Screen%20Shot%20-%20iPhone%208%20-%202020-05-09%20at%2015.24.47.png")
+As a improvements active cases and many other case infos would be append into app.
+Test number by percantage of total cases and any other  compare situation would be append of user choice.
+It is just a basic project to see corona cases with simple UI. 
+
+ 
+ 
+
+
+
+
+
+ 
