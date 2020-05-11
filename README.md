@@ -10,7 +10,7 @@
  
 
 
-As a improvements active cases and many other case infos would be append into app.
+As  improvements active cases and many other case infos would be append into app.
 Test number by percantage of total cases and any other  compare situation would be append of user choice.
 It is just a basic project to see corona cases with simple UI. 
 
