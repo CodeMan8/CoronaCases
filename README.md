@@ -8,7 +8,7 @@
  - Total cases and deaths also provided by worlwide main screen.
  - Users be able to  type country name on the top search bar and with click compare button they can see which country has much      less death number of corana virus to the others.
  
-//
+
 
 As a improvements active cases and many other case infos would be append into app.
 Test number by percantage of total cases and any other  compare situation would be append of user choice.
