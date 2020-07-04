@@ -10,7 +10,7 @@ import UIKit
 import AlamofireObjectMapper
 import Alamofire
 class ViewController: UIViewController {
-    
+    // 
     var BASE_URL = "https://corona.lmao.ninja/v2/"
 
     @IBOutlet weak var totalDeatchLabel: UILabel!
