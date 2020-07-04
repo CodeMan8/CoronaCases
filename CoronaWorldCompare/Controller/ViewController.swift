@@ -9,15 +9,36 @@
 import UIKit
 import AlamofireObjectMapper
 import Alamofire
-class ViewController: UIViewController {
-    // 
+class ViewController: UIViewController,ApiServiceDelegate {
+    func onFailure(_error: Error?, _requestCode: RequestCode) {
+        
+        if let error = _error {
+            self.totalCasesLabel.text =  error.localizedDescription
+                                 self.totalDeatchLabel.text = "RequestError:\(_requestCode)"
+        }
+     
+    }
+    
+    func onSuccess(_response: Any?, _requestCode: RequestCode) {
+        let coronaAllResponse = _response as! CoronaLast
+        if   let death = coronaAllResponse.deaths ,
+                     let cases = coronaAllResponse.cases {
+                     self.totalCasesLabel.text = "\(cases)"
+                      self.totalDeatchLabel.text = "\(death)"
+                 }
+    }
+    
+    //
+    
     var BASE_URL = "https://corona.lmao.ninja/v2/"
 
     @IBOutlet weak var totalDeatchLabel: UILabel!
     @IBOutlet weak var totalCasesLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-         getCases()
+        ApiService.delegate = self
+        ApiService.getCases()
+       //  getCases()
       //  getCountryCases()
       //  getCountry(countrySearchName: "Turkey")
         // Do any additional setup after loading the view.
@@ -36,27 +57,7 @@ class ViewController: UIViewController {
            
         pushVC(ViewControllerIdentifier: "CompareVC")
     }
-    
-    func getCases() {
-        _ = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
-        let LAST_URL = BASE_URL + "all"
-
-        Alamofire.request(LAST_URL).responseObject { (response: DataResponse<CoronaLast>) in
-             let coronaAllResponse = response.result.value
-            if   let death = coronaAllResponse?.deaths ,
-                let cases = coronaAllResponse?.cases {
-                self.totalCasesLabel.text = "\(cases)"
-                 self.totalDeatchLabel.text = "\(death)"
-            }
- 
- 
-        }
-   
-     }
-    
-    
- 
- 
+  
 
 }
 

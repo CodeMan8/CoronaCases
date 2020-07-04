@@ -16,6 +16,7 @@
 		CE797004244BC43F00EE4830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE797002244BC43F00EE4830 /* LaunchScreen.storyboard */; };
 		CE79700F244BC44000EE4830 /* CoronaWorldCompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79700E244BC44000EE4830 /* CoronaWorldCompareTests.swift */; };
 		CE79701A244BC44000EE4830 /* CoronaWorldCompareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE797019244BC44000EE4830 /* CoronaWorldCompareUITests.swift */; };
+		CEDF361D24B0A0E000744FAD /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF361C24B0A0E000744FAD /* ApiService.swift */; };
 		CEE46CAA244C465D00D8225B /* Pods_CoronaWorldCompare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE46CA8244C465D00D8225B /* Pods_CoronaWorldCompare.framework */; };
 		CEE46CAB244C465D00D8225B /* Pods_CoronaWorldCompare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEE46CA8244C465D00D8225B /* Pods_CoronaWorldCompare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEE46CAC244C465D00D8225B /* Pods_CoronaWorldCompareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE46CA9244C465D00D8225B /* Pods_CoronaWorldCompareTests.framework */; };
@@ -83,6 +84,7 @@
 		CE797015244BC44000EE4830 /* CoronaWorldCompareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaWorldCompareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE797019244BC44000EE4830 /* CoronaWorldCompareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaWorldCompareUITests.swift; sourceTree = "<group>"; };
 		CE79701B244BC44000EE4830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDF361C24B0A0E000744FAD /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		CEE46C9E244C461500D8225B /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE46C9F244C461500D8225B /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE46CA0244C461500D8225B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 		CE796FF3244BC43D00EE4830 /* CoronaWorldCompare */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF361B24B0A0C200744FAD /* ApiService */,
 				CEE46CB8244C666F00D8225B /* Controller */,
 				CEE46CB7244C666A00D8225B /* Model */,
 				CEE46CB6244C666000D8225B /* View */,
@@ -193,6 +196,14 @@
 				CE79701B244BC44000EE4830 /* Info.plist */,
 			);
 			path = CoronaWorldCompareUITests;
+			sourceTree = "<group>";
+		};
+		CEDF361B24B0A0C200744FAD /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF361C24B0A0E000744FAD /* ApiService.swift */,
+			);
+			path = ApiService;
 			sourceTree = "<group>";
 		};
 		CEE46CB6244C666000D8225B /* View */ = {
@@ -483,6 +494,7 @@
 				CEE46CB2244C5EF900D8225B /* CountryCell.swift in Sources */,
 				CE796FF9244BC43D00EE4830 /* ViewController.swift in Sources */,
 				CE796FF5244BC43D00EE4830 /* AppDelegate.swift in Sources */,
+				CEDF361D24B0A0E000744FAD /* ApiService.swift in Sources */,
 				CE796FF7244BC43D00EE4830 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
