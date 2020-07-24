@@ -18,7 +18,7 @@ enum RequestCode {
     case getCoronaAllCases
 }
 class ApiService {
-    
+    // apiservice struct
    static var delegate: ApiServiceDelegate?
   static  let BASE_URL = "https://corona.lmao.ninja/v2/"
     
