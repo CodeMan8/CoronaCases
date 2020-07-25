@@ -18,6 +18,10 @@ class CompareVC: UIViewController {
     
  
     @IBOutlet weak var tableview: UITableView!
+    var expandedIndexSet : IndexSet = []
+    var expandedCells : [Bool] = Array(repeating: false, count: 10)
+
+  
     var myCountries =  [Country]()
     var BASE_URL = "https://corona.lmao.ninja/v2/"
 
@@ -118,13 +122,47 @@ extension CompareVC: UITableViewDataSource, UITableViewDelegate {
       let cell = tableview.dequeueReusableCell(withIdentifier: "countrycell", for: indexPath) as! CountryCell
                   let myCell = myCountries[indexPath.row]
     
-        cell.updateUI(cell: myCell)
         
+        
+        if expandedIndexSet.contains(indexPath.row) {
+            cell.show()
+
+            
+        } else {
+            cell.hide()
+
+        }
+        cell.updateUI(cell: myCell)
+
+      
+
         return cell
      }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+         
+               if expandedIndexSet.contains(indexPath.row) {
+                    return 235
+        
+                           }
+               
         return 150
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+               
+               // if the cell is already expanded, remove it from the indexset to contract it
+               if(expandedIndexSet.contains(indexPath.row)){
+                   expandedIndexSet.remove(indexPath.row)
+               } else {
+                   // if the cell is not expanded, add it to the indexset to expand it
+                   expandedIndexSet.insert(indexPath.row)
+               }
+               
+               // the animation magic happens here
+               // this will call cellForRow for the indexPath you supplied, and animate the changes
+               tableView.reloadRows(at: [indexPath], with: .automatic)
     }
     
     
