@@ -21,7 +21,7 @@ class ApiService {
     // apiservice struct
    static var delegate: ApiServiceDelegate?
   static  let BASE_URL = "https://corona.lmao.ninja/v2/"
-    
+    // good
   static  func getCases() {
            _ = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
            let LAST_URL = BASE_URL + "all"

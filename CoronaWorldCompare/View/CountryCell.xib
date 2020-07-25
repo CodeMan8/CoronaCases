@@ -79,6 +79,13 @@
                             </stackView>
                         </subviews>
                     </stackView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For more infos check worldmeters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-qN-Ogb">
+                        <rect key="frame" x="37" y="192" width="260.5" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="FVY-TS-8dz" secondAttribute="trailing" constant="133.5" id="BQ5-IK-oz9"/>
@@ -94,6 +101,7 @@
                 <outlet property="countryDeathLabel" destination="SzS-3b-LVO" id="Hcj-lE-gT9"/>
                 <outlet property="countryNameLabel" destination="OC3-La-ZUO" id="Epv-2A-B5X"/>
                 <outlet property="countryTestLabel" destination="XHk-7r-dMh" id="yZu-hk-eHq"/>
+                <outlet property="forMoreInfoLabel" destination="vho-qN-Ogb" id="HBO-vn-06P"/>
             </connections>
             <point key="canvasLocation" x="151.44927536231884" y="72.65625"/>
         </tableViewCell>

@@ -18,6 +18,7 @@ class CountryCell: UITableViewCell {
     
     @IBOutlet weak var countryTestLabel: UILabel!
     
+    @IBOutlet weak var forMoreInfoLabel: UILabel!
     
     func updateUI(cell: Country) {
         print(cell.countryName)
@@ -28,7 +29,15 @@ class CountryCell: UITableViewCell {
         countryTestLabel.text = "\(cell.countryTest)"
 
         
-        
+    }
+    func show() {
+        print("ishidden false")
+        forMoreInfoLabel.isHidden = false
+    }
+    func hide() {
+        print("ishidden true")
+         forMoreInfoLabel.isHidden = true
+
     }
     
     override func awakeFromNib() {
